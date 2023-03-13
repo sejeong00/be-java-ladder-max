@@ -16,7 +16,7 @@ public class LadderGame {
         int ladderHeight;
 
         Output.printInputPlayerQuestion();
-        allPlayerString = input.inputPlayers();
+        allPlayerString = input.inputPlayerNames();
         playerNameList = new PlayerNameList(allPlayerString);
         Output.printInputLadderHeightQuestion();
         ladderHeight = input.inputLadderHeight();
