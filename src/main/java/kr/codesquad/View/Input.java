@@ -17,7 +17,7 @@ public class Input {
             try {
                 names = sc.nextLine();
                 validatePlayerNames(names);
-            } catch (InvalidPlayerNameLengthOutOfBoundary e) {
+            } catch (TooLongPlayerNameLength e) {
                 System.out.println(e.getMessage());
                 names = null;
                 Output.printInputPlayerQuestion();
@@ -31,7 +31,7 @@ public class Input {
             Arrays.stream(input.split(","))
                     .forEach(s -> {
                         if (s.length() > 5) {
-                            throw new InvalidPlayerNameLengthOutOfBoundary();
+                            throw new TooLongPlayerNameLength();
                         }
                     });
     }
