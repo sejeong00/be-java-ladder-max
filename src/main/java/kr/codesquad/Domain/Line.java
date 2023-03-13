@@ -1,4 +1,4 @@
-package kr.codesquad.Model;
+package kr.codesquad.Domain;
 
 import java.util.ArrayList;
 import java.util.List;

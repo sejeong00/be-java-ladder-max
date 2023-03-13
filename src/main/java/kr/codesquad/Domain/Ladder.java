@@ -1,9 +1,7 @@
-package kr.codesquad.Model;
+package kr.codesquad.Domain;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
 public class Ladder {
     final int ROW_SIZE;

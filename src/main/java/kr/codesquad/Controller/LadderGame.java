@@ -1,7 +1,7 @@
 package kr.codesquad.Controller;
 
-import kr.codesquad.Model.Ladder;
-import kr.codesquad.Model.PlayerNameList;
+import kr.codesquad.Domain.Ladder;
+import kr.codesquad.Domain.PlayerNameList;
 import kr.codesquad.View.Input;
 import kr.codesquad.View.Output;
 

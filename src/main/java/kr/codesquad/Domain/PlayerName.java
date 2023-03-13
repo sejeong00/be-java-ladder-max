@@ -1,4 +1,4 @@
-package kr.codesquad.Model;
+package kr.codesquad.Domain;
 
 public class PlayerName {
     final String name;
