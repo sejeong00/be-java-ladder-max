@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PlayerList {
+public class PlayerNameList {
     List<PlayerName> players = new ArrayList<>();
 
-    public PlayerList(String players) {
+    public PlayerNameList(String players) {
         setPlayers(players);
     }
 

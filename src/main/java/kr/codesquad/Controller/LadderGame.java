@@ -1,7 +1,7 @@
 package kr.codesquad.Controller;
 
 import kr.codesquad.Model.Ladder;
-import kr.codesquad.Model.PlayerList;
+import kr.codesquad.Model.PlayerNameList;
 import kr.codesquad.View.Input;
 import kr.codesquad.View.Output;
 
@@ -12,17 +12,17 @@ public class LadderGame {
         Ladder ladder;
         Input input = new Input(new Scanner(System.in));
         String allPlayerString;
-        PlayerList playerList;
+        PlayerNameList playerNameList;
         int ladderHeight;
 
         Output.printInputPlayerQuestion();
         allPlayerString = input.inputPlayers();
-        playerList = new PlayerList(allPlayerString);
+        playerNameList = new PlayerNameList(allPlayerString);
         Output.printInputLadderHeightQuestion();
         ladderHeight = input.inputLadderHeight();
 
-        ladder = new Ladder(playerList.size(), ladderHeight);
-        Output.printPlayerList(playerList.toString());
+        ladder = new Ladder(playerNameList.size(), ladderHeight);
+        Output.printPlayerList(playerNameList.toString());
         Output.printLadder(ladder.toString());
     }
 }
