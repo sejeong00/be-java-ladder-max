@@ -1,9 +1,9 @@
 package kr.codesquad.Model;
 
-public class Player {
+public class PlayerName {
     final String name;
 
-    public Player(String name) {
+    public PlayerName(String name) {
         this.name = name;
     }
 

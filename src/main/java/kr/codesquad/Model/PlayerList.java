@@ -1,13 +1,11 @@
 package kr.codesquad.Model;
 
-import kr.codesquad.Model.Player;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class PlayerList {
-    List<Player> players = new ArrayList<>();
+    List<PlayerName> players = new ArrayList<>();
 
     public PlayerList(String players) {
         setPlayers(players);
@@ -15,7 +13,7 @@ public class PlayerList {
 
     private void setPlayers(String players){
         Arrays.stream(players.split(","))
-                .forEach(p -> this.players.add(new Player(p)));
+                .forEach(p -> this.players.add(new PlayerName(p)));
     }
 
     public int size(){
@@ -26,7 +24,7 @@ public class PlayerList {
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
-        for(Player player : players){
+        for(PlayerName player : players){
             sb.append(String.format("%5s ", player));
         }
 
