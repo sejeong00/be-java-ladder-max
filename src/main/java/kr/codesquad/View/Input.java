@@ -11,15 +11,17 @@ public class Input {
     }
 
     public String inputPlayerNames(){
-        String names = "";
+        String names = null;
 
-        try {
-            names = sc.nextLine();
-            validatePlayerNames(names);
-        } catch(InvalidPlayerNameLengthOutOfBoundary e){
-            System.out.println(e.getMessage());
-            Output.printInputPlayerQuestion();
-            names = inputPlayerNames();
+        while(names == null) {
+            try {
+                names = sc.nextLine();
+                validatePlayerNames(names);
+            } catch (InvalidPlayerNameLengthOutOfBoundary e) {
+                System.out.println(e.getMessage());
+                names = null;
+                Output.printInputPlayerQuestion();
+            }
         }
 
         return names;
